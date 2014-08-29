@@ -1,0 +1,47 @@
+# This file must be sourcable.
+letter_height=1
+data_start=8
+characters=' -_.!|abcdefghijklmnopqrstuvwxyzäöüCNST'
+declare -A kern_map=()
+kern_width=1
+return; cat <<EOF
+  
+- 
+_ 
+. 
+! 
+| 
+a 
+b 
+c 
+d 
+e 
+f 
+g 
+h 
+i 
+j 
+k 
+l 
+m 
+n 
+o 
+p 
+q 
+r 
+s 
+t 
+u 
+v 
+w 
+x 
+y 
+z 
+ä 
+ö 
+ü 
+C 
+N 
+S 
+T 
+EOF

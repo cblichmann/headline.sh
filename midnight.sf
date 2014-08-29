@@ -1,0 +1,50 @@
+# This file must be sourcable.
+letter_height=6
+data_start=8
+characters='dghintM'
+declare -A kern_map=()
+kern_width=1
+return; cat <<EOF
+  ┐  
+  │  
+┌─┤  
+│ │  
+└─┴  
+     
+     
+     
+┌─┬  
+│ │  
+└─┤  
+ ─┘  
+┐    
+│    
+├─┐  
+│ │  
+┴ ┴  
+     
+   
+.  
+┐  
+│  
+┴  
+   
+     
+     
+┬─┐  
+│ │  
+┴ ┴  
+     
+   
+   
+┼  
+│  
+└┘ 
+   
+┌─┬─┐  
+│ │ │  
+│ │ │  
+│ │ │  
+┴   ┴  
+       
+EOF
