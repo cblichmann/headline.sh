@@ -1,13 +1,15 @@
 #!/bin/bash
 
 # Change to the directory of this script.
-cd "$(readlink -e "$(dirname "$0")")"
+cd "$(dirname "$(realpath "$0")")"
 
 # Source font file and build character map.
 HEADLINE_FONT=${HEADLINE_FONT:-shell-sans.sf}
 . $HEADLINE_FONT
-declare -A f
-for ((i=0;i<${#characters};i++)); do f[${characters:i:1}]=$i; done
+declare -A HEADLINE_MAP
+for ((i=0;i<${#characters};i++)); do
+	HEADLINE_MAP[${characters:i:1}]=$i;
+done
 
 render_text()
 {
@@ -15,8 +17,7 @@ render_text()
 	for ((i=0;i<${#1};i++)); do
 		j=0
 		c=${1:i:1}
-		# printf '%d' "'$c"  == 27
-		let letter_start=${f[$c]}*letter_height+data_start
+		let letter_start=${HEADLINE_MAP[$c]}*letter_height+data_start
 		while read -r line; do
 			cur_line=${lines[j]:0:-$kern_width}
 			cur_last=${lines[j]:(-$kern_width)}
