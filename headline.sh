@@ -37,4 +37,4 @@ render_text()
 
 IFS=''
 while read -r line; do render_text "$line"; done < \
-	<([ -n "$1" ] && echo "$1" || cat)
+	<([ -n "$1" ] && echo "$@" || cat)
