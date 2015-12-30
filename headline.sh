@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Change to the directory of this script.
-cd "$(dirname "$(realpath "$0")")"
+cd "$(dirname "$0")" && cd "$(pwd -P)"
 
 # Source font file and build character map.
 HEADLINE_FONT=${HEADLINE_FONT:-shell-sans.sf}
