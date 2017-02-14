@@ -108,8 +108,8 @@ Bugs
 Copyright/License
 -----------------
 
-headline.sh version 0.1
-Copyright (c)2015,2016 Christian Blichmann <headline-sh@blichmann.eu>
+headline.sh version 0.2
+Copyright (c)2015-2017 Christian Blichmann <headline-sh@blichmann.eu>
 
 headline.sh is licensed under a two-clause BSD license, see the LICENSE file
 for details.
