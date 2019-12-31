@@ -1,6 +1,6 @@
 #!/bin/bash
-# headline.sh version 0.2
-# Copyright (c)2015-2017 Christian Blichmann
+# headline.sh version 0.3
+# Copyright (c)2015-2020 Christian Blichmann
 #
 # ASCII-art font renderer
 #

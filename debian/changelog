@@ -1,0 +1,12 @@
+headline.sh (0.3-1) UNRELEASED; urgency=medium
+
+  * Add Debian packaging
+  * Update license information and readme
+
+ -- Christian Blichmann <mail@blichmann.eu>  Tue, 31 Dec 2019 15:21:36 +0100
+
+headline.sh (0.2-1) UNRELEASED; urgency=medium
+
+  * Initial release. Tested with Bash 4.4.
+
+ -- Christian Blichmann <mail@blichmann.eu>  Wed, 15 Feb 2017 12:01:00 +0100

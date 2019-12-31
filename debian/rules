@@ -1,7 +1,9 @@
+#!/usr/bin/make -f
+#
 # headline.sh version 0.3
 # Copyright (c)2015-2020 Christian Blichmann
 #
-# An identity-mapped font
+# CDBS rules file for Debian packaging
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are met:
@@ -22,53 +24,5 @@
 # CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
 # ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 # POSSIBILITY OF SUCH DAMAGE.
-#
-# This file must be sourcable.
-letter_height=1
-data_start=33
-characters=' -_.!|abcdefghijklmnopqrstuvwxyzäöüABCNST'
-declare -A kern_map=()
-kern_width=1
-return; cat <<EOF
-  
-- 
-_ 
-. 
-! 
-| 
-a 
-b 
-c 
-d 
-e 
-f 
-g 
-h 
-i 
-j 
-k 
-l 
-m 
-n 
-o 
-p 
-q 
-r 
-s 
-t 
-u 
-v 
-w 
-x 
-y 
-z 
-ä 
-ö 
-ü 
-A 
-B 
-C 
-N 
-S 
-T 
-EOF
+
+include /usr/share/cdbs/1/rules/debhelper.mk

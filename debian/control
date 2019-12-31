@@ -1,0 +1,16 @@
+Source: headline.sh
+Maintainer: Christian Blichmann <headline-sh@blichmann.eu>
+Section: admin
+Priority: optional
+Build-Depends: cdbs,
+               debhelper (>= 10)
+Standards-Version: 4.2.1
+Homepage: https://github.com/cblichmann/headline.sh
+
+Package: headline.sh
+Architecture: any
+Built-Using: ${misc:Built-Using}
+Depends: ${misc:Depends}
+Description: ASCII-art font renderer for the command-line
+ headline.sh is a small Bash shell script to print banner text to the
+ terminal in different fonts.
